@@ -16,6 +16,7 @@
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             font-family: sans-serif;
+            position: relative;
         }
 
         @keyframes gradient {
@@ -24,6 +25,22 @@
             100% { background-position: 0% 50%; }
         }
 
+        /* ئاڵا بچووکەکەی گۆشەی سەرەوە */
+        .kurdish-flag-fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        /* ئاڵا گەورەکەی ناوەڕاست (لە جیاتی وێنە) */
         .main-flag {
             width: 120px;
             height: 80px;
@@ -46,6 +63,7 @@
         }
         .green { background-color: #278540; flex: 1; }
         .sun { color: #FFD100; font-size: 24px; font-weight: bold; }
+        .sun-small { color: #FFD100; font-size: 14px; }
 
         .card {
             background: rgba(255, 255, 255, 0.15);
@@ -83,7 +101,15 @@
 </head>
 <body>
 
+    <!-- ئاڵا بچووکەکەی گۆشە -->
+    <div class="kurdish-flag-fixed">
+        <div class="red"></div>
+        <div class="white"><div class="sun-small">☀️</div></div>
+        <div class="green"></div>
+    </div>
+
     <div class="card">
+        <!-- ئاڵا گەورەکەی ناوەڕاست -->
         <div class="main-flag">
             <div class="red"></div>
             <div class="white"><div class="sun">☀️</div></div>
