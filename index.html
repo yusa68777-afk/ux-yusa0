@@ -26,44 +26,40 @@
         }
 
         /* ئاڵا بچووکەکەی گۆشەی سەرەوە */
-        .kurdish-flag-fixed {
+        .top-flag {
             position: fixed;
             top: 20px;
             right: 20px;
-            width: 60px;
-            height: 40px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            width: 50px;
+            height: 30px;
+            background: linear-gradient(to bottom, #ED2024 33.3%, #ffffff 33.3%, #ffffff 66.6%, #278540 66.6%);
             border-radius: 4px;
-            overflow: hidden;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
             z-index: 1000;
         }
 
-        /* ئاڵا گەورەکەی ناوەڕاست (لە جیاتی وێنە) */
-        .main-flag {
-            width: 120px;
-            height: 80px;
+        /* ئاڵای ناوەڕاست بە کوالێتی بەرز */
+        .flag-box {
+            width: 140px;
+            height: 90px;
+            margin: 0 auto 20px auto;
+            border-radius: 12px;
+            border: 3px solid white;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 0 auto 20px auto;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            border: 2px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
-        .red { background-color: #ED2024; flex: 1; }
-        .white { 
-            background-color: #FFFFFF; 
-            flex: 1; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-        }
-        .green { background-color: #278540; flex: 1; }
-        .sun { color: #FFD100; font-size: 24px; font-weight: bold; }
-        .sun-small { color: #FFD100; font-size: 14px; }
+        .stripe { flex: 1; display: flex; justify-content: center; align-items: center; }
+        .red { background: #ED2024; }
+        .white { background: #FFFFFF; }
+        .green { background: #278540; }
+        .sun-icon { color: #FFD100; font-size: 28px; font-weight: bold; line-height: 0; }
 
         .card {
             background: rgba(255, 255, 255, 0.15);
@@ -78,7 +74,7 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
 
-        h2 { color: white; margin-bottom: 25px; font-size: 24px; }
+        h2 { color: white; margin-bottom: 25px; font-size: 22px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 
         .social-link {
             display: block;
@@ -101,19 +97,13 @@
 </head>
 <body>
 
-    <!-- ئاڵا بچووکەکەی گۆشە -->
-    <div class="kurdish-flag-fixed">
-        <div class="red"></div>
-        <div class="white"><div class="sun-small">☀️</div></div>
-        <div class="green"></div>
-    </div>
+    <div class="top-flag">☀️</div>
 
     <div class="card">
-        <!-- ئاڵا گەورەکەی ناوەڕاست -->
-        <div class="main-flag">
-            <div class="red"></div>
-            <div class="white"><div class="sun">☀️</div></div>
-            <div class="green"></div>
+        <div class="flag-box">
+            <div class="stripe red"></div>
+            <div class="stripe white"><span class="sun-icon">☀️</span></div>
+            <div class="stripe green"></div>
         </div>
 
         <h2>پەیجەکانم</h2>
