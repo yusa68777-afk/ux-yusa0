@@ -2,7 +2,7 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="name" content="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>پەیجەکانی یوسف</title>
     <style>
         body {
@@ -16,7 +16,6 @@
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             font-family: sans-serif;
-            position: relative;
         }
 
         @keyframes gradient {
@@ -25,18 +24,16 @@
             100% { background-position: 0% 50%; }
         }
 
-        .kurdish-flag-fixed {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 60px;
-            height: 40px;
+        .main-flag {
+            width: 120px;
+            height: 80px;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            border-radius: 4px;
+            border-radius: 12px;
             overflow: hidden;
-            z-index: 1000;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            border: 2px solid white;
         }
 
         .red { background-color: #ED2024; flex: 1; }
@@ -48,10 +45,7 @@
             align-items: center; 
         }
         .green { background-color: #278540; flex: 1; }
-        .sun-center {
-            color: #FFD100;
-            font-size: 14px;
-        }
+        .sun { color: #FFD100; font-size: 24px; font-weight: bold; }
 
         .card {
             background: rgba(255, 255, 255, 0.15);
@@ -66,16 +60,7 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
 
-        .profile-img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 3px solid white;
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-
-        h2 { color: white; margin-bottom: 25px; }
+        h2 { color: white; margin-bottom: 25px; font-size: 24px; }
 
         .social-link {
             display: block;
@@ -98,14 +83,13 @@
 </head>
 <body>
 
-    <div class="kurdish-flag-fixed">
-        <div class="red"></div>
-        <div class="white"><div class="sun-center">☀️</div></div>
-        <div class="green"></div>
-    </div>
-
     <div class="card">
-        <img src="IMG_0210.jpeg" class="profile-img">
+        <div class="main-flag">
+            <div class="red"></div>
+            <div class="white"><div class="sun">☀️</div></div>
+            <div class="green"></div>
+        </div>
+
         <h2>پەیجەکانم</h2>
 
         <a href="https://snapchat.com/t/2vv21LTj" class="social-link">Snapchat</a>
