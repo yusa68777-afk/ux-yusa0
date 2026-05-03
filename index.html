@@ -2,7 +2,7 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="viewport" content="width=device-width, initial-scale=1.0">
     <title>پەیجەکانی یوسف</title>
     <style>
         body {
@@ -25,52 +25,45 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* ئاڵای کوردستان لە گۆشەی سەرەوە */
         .kurdish-flag-fixed {
-            position: absolute;
+            position: fixed;
             top: 20px;
-            left: 20px;
-            width: 50px;
-            height: 30px;
+            right: 20px;
+            width: 60px;
+            height: 40px;
             display: flex;
             flex-direction: column;
-            border: 1px solid rgba(255,255,255,0.4);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             border-radius: 4px;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            z-index: 100;
+            z-index: 1000;
         }
 
-        .red { background: #ED2024; flex: 1; }
+        .red { background-color: #ED2024; flex: 1; }
         .white { 
-            background: #FFFFFF; 
+            background-color: #FFFFFF; 
             flex: 1; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            position: relative;
         }
-        .green { background: #278540; flex: 1; }
-        
+        .green { background-color: #278540; flex: 1; }
         .sun-center {
-            width: 10px;
-            height: 10px;
-            background: #FFD500;
-            border-radius: 50%;
-            position: absolute;
+            color: #FFD100;
+            font-size: 14px;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 30px;
             width: 85%;
             max-width: 320px;
             text-align: center;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
 
         .profile-img {
@@ -82,11 +75,11 @@
             object-fit: cover;
         }
 
-        h2 { color: white; margin-bottom: 25px; font-size: 24px; }
+        h2 { color: white; margin-bottom: 25px; }
 
         .social-link {
             display: block;
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.2);
             color: white;
             text-decoration: none;
             margin: 12px 0;
@@ -107,19 +100,17 @@
 
     <div class="kurdish-flag-fixed">
         <div class="red"></div>
-        <div class="white"><div class="sun-center"></div></div>
+        <div class="white"><div class="sun-center">☀️</div></div>
         <div class="green"></div>
     </div>
 
     <div class="card">
-        <img src="IMG_0210.jpeg">
+        <img src="IMG_0210.jpeg" class="profile-img">
         <h2>پەیجەکانم</h2>
-        
-        <a href="https://snapchat.com/t/2vv21LTj" target="_blank" class="social-link">Snapchat</a>
-        
-        <a href="https://www.tiktok.com/@yusf_kirkuky0?_r=1&_t=ZS-9638cTi4ym4" target="_blank" class="social-link">TikTok</a>
-        
-        <a href="https://www.instagram.com/uxyusa0?igsh=MXA0OXA4MnZwNnZ6Zg%3D%3D&utm_source=qr" target="_blank" class="social-link">Instagram</a>
+
+        <a href="https://snapchat.com/t/2vv21LTj" class="social-link">Snapchat</a>
+        <a href="https://www.tiktok.com/@yusf_kirkuki" class="social-link">TikTok</a>
+        <a href="https://www.instagram.com/uxyusa0" class="social-link">Instagram</a>
     </div>
 
 </body>
